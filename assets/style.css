@@ -1,0 +1,380 @@
+*{ 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Pangolin|Patrick+Hand|Sacramento|Satisfy&display=swap');
+
+@font-face {
+    font-family: "Lemon";
+    src: url('DK\ Lemon\ Yellow\ Sun.otf');
+}
+@font-face {
+     font-family: "Rockness";
+     src: url('Rockness.ttf');
+}
+@font-face {
+     font-family: "Satan";
+     src: url('Sattanic\ DEMO.ttf');
+}
+
+header{
+    --text-inverse:black;
+    --background: transparent;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition:background 250ms ease-in;
+    background:var(--background);
+    color:var(--text);
+    z-index: 10;
+}
+nav img{
+    width: 100px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5% 5%;
+}
+
+.diScroll{
+    --background:url('abstract.jpg');
+    box-shadow: 0 3px 10px black;
+}
+
+nav ul li{
+    position: relative;
+    list-style-type: none;
+    display:inline-block;
+    margin-right: 2em;
+    text-align: center;
+ }
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Lemon';
+}
+nav ul li a:hover{
+    color:#75daad;   
+    text-shadow: 1px 1px 1px black;
+}
+#kepala nav a {
+    cursor: pointer;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.ul{   
+    list-style: none;
+}
+.kotak {
+    padding: 3%;
+    width:100%;
+    height: 100%;
+}
+.kotak .isi{
+    padding:0 3% 2% 3%;
+}
+
+.kotak h2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3%;
+   margin-bottom: 2%;
+}
+.kotak .isi, aside p, footer p{
+    font-family: 'Pangolin',cursive;
+}
+button{
+    cursor: pointer;
+    border:0;
+    outline:none;
+    font-size:50px;
+    font-family: Lemon;
+    padding:auto;
+    transition:.5s;
+}
+#tentang{
+    margin: 0 auto;
+    float:left;
+    width:75%;
+}
+#tentang .isi{
+    text-align: center;
+}
+#tentang .isi .col{
+    display:flex;
+    justify-content: space-around;
+}
+#tentang .isi .col .kiri{
+    display:flex;
+    flex-direction:column;
+}
+#tentang .isi .col .kanan{
+    display:flex;
+    flex-direction:column;
+}
+#tentang .isi img{
+    max-height: 120px;
+    margin-bottom: 20px;
+}
+
+
+  
+#beranda{
+    width: 100%;
+    height: 100%;
+    padding-top: 13%;
+}
+#beranda .isi{
+    background: rgba(41, 41, 41, 0.26);
+    padding: auto ;
+    font-family: Satan, Segoe UI Script;
+    color: white;
+    margin: 0 auto;
+    font-size: 3em;
+    text-align: center;
+}
+h2{
+    font-family:Satan;
+    font-size: 2.3em;
+}
+#tentang h2, #kegiatan h2, #gabung h2{
+    background:#88e1f2;
+}
+#donasi{
+    margin-top:50px;
+    width: 100%;
+    height: 100%;
+    background:url('actionaid.jpg');
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-position:center center;
+}
+#donasi h2{
+    color:white;
+}
+#donasi .isi{
+    display:flex;
+    flex-direction:column;
+    padding-top: 2%;
+    background: rgba(0, 75, 65, 0.26);
+    color:#fff;
+}
+#donasi .isi .jumlah{
+    font-size: 5em;
+    margin: 0 3%;
+    overflow: auto;
+    display:flex;
+    justify-content:flex-end;
+}
+#donasi .isi .tombol button{
+    background: #f0134d;
+    height:80px;
+    width: 140px;
+    text-align: center;
+    color:#fff;
+    border:2px solid #f0134d;
+    margin-top: 30px;
+}
+#donasi .isi .tombol button:hover{
+    box-shadow:0 0 40px #fff;
+}
+
+.tombolGabung{
+    border:2px solid #216353;
+    color:#216353;
+    background:transparent;
+    height:80px;
+    width: 220px;
+}
+.tombolGabung:hover{
+    background: #216353;
+    color:#75daad;
+}
+.tombolBatal{
+    border:2px solid #f0134d;
+    color:#fff;
+    background:#f0134d;
+    height:80px;
+    width: 330px;
+}
+.tombolBatal:hover{
+    background: black;
+    border-color: black;
+}
+#donasi .isi .ket .tombol{
+    height:20%;
+    justify-content:flex-end;
+    text-align: center;
+    margin:0 auto;
+}
+#kegiatan{
+    clear: both;
+}
+#kegiatan .isi .dtKegiatan{
+    margin-top: 0;
+    width: 100%;
+    flex-direction: column;
+}
+#kegiatan .isi .dtKegiatan .row{
+    display:flex;
+    width: 100%;
+    margin:0% 0.5% 1% 0.5%;
+    flex-direction: row;    
+}
+#gabung .isi{
+    text-align: center;
+}
+#gabung .isi img{
+    max-height: 200px;
+}
+.foto{
+    display:flex;
+    justify-content: space-around;
+}   
+.foto>div{
+    margin:10px;
+}
+#kegiatan .isi .dtKegiatan .row:nth-child(2){
+    justify-content: flex-end;
+    margin-top: 3%;
+}
+.tkotak {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    text-align: center;
+    max-width: 300px;
+}
+.tkotak:nth-child(3){
+    background-color: red;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}  
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 75, 65, 0.26);
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4%;
+}
+.overlay a{
+    color: #fff; 
+}
+.tkotak:hover .overlay {
+    opacity: 1;
+}
+#utama{
+    background:url('home.jpg');
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#beranda .isi h2{
+     font-family:Rockness;
+}
+img{
+    border-radius:4%;
+}
+footer{
+    text-align: center;
+    background:linear-gradient(transparent, #75daad);   
+    color: white;
+    padding: 0, 1.5%, 1.5%, 1.5%;
+    height:15%;
+    width: 100%;
+    text-shadow: 1px .5px 1px black;
+}
+aside{
+    float:right;
+    width:25%;
+    margin: 0 auto;
+    padding:45px 10px 10px 10px;
+}
+aside h2{
+    margin:auto auto 3% auto;
+}
+aside a i{
+    color:black;
+    cursor: pointer;
+    margin: 2%;
+}
+aside a .fa:hover{
+    color:#f0134d;
+}
+aside a .fa{
+    font-size:3em;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    transition: 5s;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #88e1f2);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #f0134d);
+}
+
+@media screen and (max-width: 1300px){
+    #gabung .isi .foto img{
+        max-width: 340px;
+        max-height: 160px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #tentang, aside{
+        width: 100%;
+    }
+    #kegiatan .isi .dtKegiatan .row, #gabung .isi .foto{
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    #beranda .isi{
+        margin-top:100px;
+        
+    }
+    #beranda .isi h2{
+        font-size:1.2em;
+    }
+    .foto>div{
+        margin-bottom:10px;
+    }
+    #kegiatan .isi .dtKegiatan .row .tkotak{
+        font-size: .8em;
+        margin-bottom:20px;
+    }
+    #gabung .isi .foto img{
+        max-width: 300px;
+        max-height: 120px;
+    }
+    nav ul li{
+        margin-right: 1em;
+    }
+ }
